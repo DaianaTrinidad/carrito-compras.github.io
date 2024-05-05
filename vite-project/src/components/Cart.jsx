@@ -3,7 +3,7 @@ import './Cart.css'
 import { useId } from 'react'
 import { CartIcon, ClearCartIcon } from './Icons.jsx'
 import { useCart } from '../hooks/useCart.js'
-
+//agrega productos al carrito
 function CartItem ({ thumbnail, price, title, quantity, addToCart }) {
   return (
     <li>
@@ -19,6 +19,7 @@ function CartItem ({ thumbnail, price, title, quantity, addToCart }) {
         <small>
           Qty: {quantity}
         </small>
+    
         <button onClick={addToCart}>+</button>
       </footer>
     </li>
